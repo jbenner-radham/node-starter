@@ -1,13 +1,22 @@
 {
   "name": "node-starter",
   "version": "0.0.0",
-  "description": "",
+  "description": "...",
   "keywords": [],
   "license": "BSD-3-Clause",
   "author": "James Benner <hello@jamesbenner.com> (https://www.jamesbenner.com/)",
   "sideEffects": false,
   "type": "module",
-  "main": "index.js",
+  "exports": {
+    "import": {
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/esm/index.js"
+    },
+    "require": {
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/cjs/index.js"
+    }
+  },
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "node ./scripts/build.js",
@@ -36,5 +45,8 @@
     "typescript": "^5.9.3",
     "vitest": "^3.2.4"
   },
-  "packageManager": "pnpm@10.18.0"
+  "packageManager": "pnpm@10.18.0",
+  "engines": {
+    "node": ">=22"
+  }
 }
