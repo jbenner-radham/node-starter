@@ -25,6 +25,10 @@
       "default": "./dist/cjs/index.js"
     }
   },
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "node ./scripts/build.js",
