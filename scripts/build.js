@@ -7,7 +7,6 @@ const cjsPath = path.join('dist', 'cjs');
 const entryPoints = [path.join('src', 'index.ts')];
 const esmPath = path.join('dist', 'esm');
 const commonBuildOptions = { bundle: true, entryPoints, minify: true, sourcemap: true };
-const typesPath = path.join('dist', 'types');
 
 async function buildCjs() {
   await esbuild.build({ ...commonBuildOptions, format: 'cjs', outdir: cjsPath });
@@ -26,7 +25,7 @@ async function buildEsm() {
 }
 
 async function buildTypes() {
-  await $`tsc --declaration --declarationMap --emitDeclarationOnly --outDir ${typesPath}`;
+  await $`tsc`;
 }
 
 await Promise.all([buildCjs(), buildEsm(), buildTypes()]);
