@@ -30,8 +30,8 @@
     "CHANGELOG.md"
   ],
   "scripts": {
-    "prebuild": "rimraf dist",
-    "build": "node ./scripts/build.js",
+    "prebuild": "rimraf ./dist",
+    "build": "duo-build",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prepare": "husky",
@@ -47,9 +47,8 @@
     "@radham/eslint-config": "^7.0.0",
     "@types/node": "^22.18.8",
     "@vitest/coverage-v8": "^3.2.4",
-    "esbuild": "^0.25.11",
+    "duo-build": "^0.1.1",
     "eslint": "^9.37.0",
-    "execa": "^9.6.0",
     "globals": "^16.4.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.4",
