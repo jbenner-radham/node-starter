@@ -34,6 +34,18 @@ export default defineConfig([
     files: ['**/*.md'],
     plugins: { markdown },
     language: 'markdown/gfm',
-    extends: ['markdown/recommended']
+    extends: ['markdown/recommended'],
+    rules: {
+      // Allow GFM Alerts. See: https://tinyurl.com/gfm-alerts
+      'markdown/no-missing-label-refs': ['error', {
+        allowLabels: [
+          '!CAUTION',
+          '!IMPORTANT',
+          '!NOTE',
+          '!TIP',
+          '!WARNING'
+        ]
+      }]
+    }
   }
 ]);
