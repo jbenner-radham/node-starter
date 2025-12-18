@@ -26,7 +26,7 @@ export default defineConfig([
   {
     files: ['tsconfig.json'],
     plugins: { json },
-    language: 'json/json5',
+    language: 'json/jsonc',
     extends: ['json/recommended']
   },
   {
