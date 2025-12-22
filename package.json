@@ -43,11 +43,11 @@
   "devDependencies": {
     "@eslint/compat": "^2.0.0",
     "@eslint/json": "^0.14.0",
-    "@radham/eslint-config": "^10.1.0",
+    "@radham/eslint-config": "^12.0.0",
     "@types/node": "^22.18.8",
     "@vitest/coverage-v8": "^4.0.12",
     "duo-build": "^0.2.1",
-    "eslint": "^9.39.1",
+    "eslint": "^9.39.2",
     "globals": "^16.5.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
