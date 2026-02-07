@@ -1,8 +1,8 @@
 import { defineConfig } from 'cspell';
 
 export default defineConfig({
-  // Since cSpell doesn't appear to honor global gitignores we manually ignore
-  // various editor config directories amongst other things.
+  // Since cSpell doesn't appear to honor global gitignores, we manually ignore
+  // various editor config directories, amongst other things.
   ignorePaths: [
     '.git/',
     '.idea/',
