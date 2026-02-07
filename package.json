@@ -43,7 +43,7 @@
   "devDependencies": {
     "@eslint/compat": "^2.0.0",
     "@eslint/json": "^0.14.0",
-    "@radham/changelog": "^0.1.0",
+    "@radham/changelog": "^0.1.1",
     "@radham/eslint-config": "^12.0.0",
     "@types/node": "^22.18.8",
     "@vitest/coverage-v8": "^4.0.16",

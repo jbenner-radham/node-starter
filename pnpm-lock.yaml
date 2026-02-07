@@ -15,8 +15,8 @@ importers:
         specifier: ^0.14.0
         version: 0.14.0
       '@radham/changelog':
-        specifier: ^0.1.0
-        version: 0.1.0
+        specifier: ^0.1.1
+        version: 0.1.1
       '@radham/eslint-config':
         specifier: ^12.0.0
         version: 12.0.0(eslint@9.39.2)(typescript@5.9.3)
@@ -490,8 +490,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@radham/changelog@0.1.0':
-    resolution: {integrity: sha512-VlhDD0AhAURTayz6yY0q3lc+YegFkBcwYVNJr7S1dnXcXxthmcJah5XBKTopuTk3Xs0785Mu9j2YiqzzJ6E7Zw==}
+  '@radham/changelog@0.1.1':
+    resolution: {integrity: sha512-lTswAvcqpKPoiTF4r/HlbZRVuTghc18nq6Aj3xxzlur20xlavRSx3Z5r4r6x19XJrtvSGfG39UhWPrDYBKwD9w==}
     engines: {node: '>=24'}
     hasBin: true
 
@@ -2235,7 +2235,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@radham/changelog@0.1.0':
+  '@radham/changelog@0.1.1':
     dependencies:
       '@radham/semver': 1.0.0
       hosted-git-info: 9.0.2
