@@ -25,5 +25,6 @@ export default defineConfig({
     'vitepress',
     'vuepress',
     'wscript'
-  ]
+  ],
+  version: '0.2'
 });
