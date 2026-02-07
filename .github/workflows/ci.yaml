@@ -28,6 +28,8 @@ jobs:
       - name: Lint
         if: ${{ !env.ACT }} # Skip linting if we're running Act since we do that via Husky.
         run: pnpm run lint
+      - name: Spell check
+        run: pnpm run spellcheck
       - name: Test
         run: pnpm test
       - name: Build
